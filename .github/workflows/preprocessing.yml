@@ -33,4 +33,4 @@ jobs:
       - name: Verify preprocessing output
         run: |
           echo "Checking preprocessed file..."
-          test -f diabetes_preprocessed.csv && echo "SUCCESS" || exit 1
+          test -f preprocessing/diabetes_preprocessed.csv && echo "SUCCESS" || exit 1
