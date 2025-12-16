@@ -1,6 +1,6 @@
 name: Preprocessing Dataset
 
-on:
+"on":
   push:
     branches:
       - main
@@ -32,6 +32,5 @@ jobs:
 
       - name: Verify preprocessing output
         run: |
-          echo "=== Checking preprocessed file ==="
-          ls -l
-          test -f diabetes_preprocessed.csv && echo "Preprocessing SUCCESS" || echo "Preprocessing FAILED"
+          echo "Checking preprocessed file..."
+          test -f diabetes_preprocessed.csv && echo "SUCCESS" || exit 1
