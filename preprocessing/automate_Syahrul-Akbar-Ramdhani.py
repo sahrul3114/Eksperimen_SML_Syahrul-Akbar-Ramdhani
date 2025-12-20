@@ -98,4 +98,5 @@ if __name__ == "__main__":
         download_dataset(DATASET_URL, RAW_FILE)
         preprocess_data(RAW_FILE, PROCESSED_FILE)
     except Exception as e:
+
         print(f"[ERROR] {e}")
