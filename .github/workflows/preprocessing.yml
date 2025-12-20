@@ -1,6 +1,6 @@
 name: Preprocessing Dataset
 
-"on":
+on:
   push:
     branches:
       - main
